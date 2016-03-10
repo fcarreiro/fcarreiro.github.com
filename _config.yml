@@ -8,8 +8,8 @@ port: 3001
 safe: true
 
 # edit here to achieve your personal greatness
-url: http://fcarreiro.github.io/
-baseurl: /
+url: http://www.facundo.nl/
+# baseurl: /
 title: Facundo Carreiro
 author: Facundo Carreiro
 description: Personal blog and resume
