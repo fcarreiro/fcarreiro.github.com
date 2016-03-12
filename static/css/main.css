@@ -168,6 +168,21 @@ body {
   text-align: center;
 }
 
+/* Papers
+-------------------------------------------------- */
+
+.abstract {
+  font-size: 10pt;
+  line-height: 1.5em;
+  color: #666;
+  margin-top: 0.8em;
+}
+
+.papers h5 {
+  line-height: 1.4em;
+  margin-top: 1.3em;
+}
+
 /* Footer 
 -------------------------------------------------- */
 
