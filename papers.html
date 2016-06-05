@@ -1,6 +1,46 @@
 ---
-layout: page
+layout: layout
 title: "Facundo Carreiro: Papers"
 ---
 
-{% include papers.md %}
+<section id="papers">
+<div class="container">
+  <h3>PhD dissertation</h3>
+  <div class="panel panel-default">
+    <div class="panel-body papers">
+    <h5><span class="fa fa-book"></span>&nbsp;&nbsp;<a
+      href="http://dare.uva.nl/record/1/495444">Fragments of Fixpoint Logics: Automata and Expressiveness</a>.<br>
+      <span
+      class="names"><strong>Facundo Carreiro</strong>.</span>
+      Institute for Logic, Language and Computation. University of Amsterdam, 2015. Supervisor: Yde Venema.
+    <p class="abstract">
+    This dissertation studies the relative expressive power and properties of several fixpoint and second-order logics. We use the term fixpoint logic in a broad sense, referring to any logic which can encode some type of recursion, iteration or repetition.
+    Our main objective is to systematically identify several important logics as precise fragments of other well-known logics. In order to accomplish this task, we develop automata-theoretic tools to analyze these fragments. The results of this dissertation provide new insight on the relationship of fixpoint and second-order logic and provides further evidence of the successful logic-automata connection.</p></h5>
+    </div>
+  </div>
+
+  <h3>Papers</h3>
+  <div class="panel panel-default">
+    <div class="panel-body papers">
+      {% for paper in site.data.papers %}
+        <h5>
+          <span class="fa fa-file"></span>&nbsp;&nbsp;
+          <a href="{{ paper.url }}">{{ paper.title }}</a>.<br>
+          <span class="names">
+            <!-- <strong>{{ paper.author }}</strong>. -->
+            {{ paper.author }}.
+          </span>
+          In <cite>{{ paper.place }}</cite>, pages {{ paper.pages }}.
+          {% if paper.date %}
+            {{ paper.date }}.
+          {% endif %}
+          {% if paper.doi %}
+            (<a href="{{ paper.doi-url }}">{{ paper.doi }}</a>)
+          {% endif %}
+          <p class="abstract">{{ paper.abstract }}</p>
+        </h5>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+</section>
