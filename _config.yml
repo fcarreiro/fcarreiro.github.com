@@ -20,5 +20,5 @@ github: fcarreiro # username
 # linkedin: username
 # stackoverflow: username   # e.g: users/2735833/proton1h1
 #Comment out if you don't want disqus
-# disqus: username
+disqus: fcmod
 google_analytics: UA-31714232-1

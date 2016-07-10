@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Principal Component Analysis
+title: "Principal Component Analysis: an interpretation of the covariance matrix"
 date: 2014-12-05 09:00:44.000000000 +01:00
 type: post
 published: true
@@ -26,7 +26,9 @@ author:
   first_name: ''
   last_name: ''
 ---
-A few days ago I learned about <a href="http://en.wikipedia.org/wiki/Principal_component_analysis">Principal Component Analysis</a>. In "machine learning terms", it is a method that given your set of features, synthesises a new smaller set of features which (a) represent the relevant differences in your data; and (b) they are independent of each other. Very informally, this is done by first checking how the original features of your dataset \\(X \in \mathbb{R}^{m\times n}\\) depend on each other, by calculating the covariance matrix \\(\Sigma = X^T X / m\\) and then performing a <a href="http://en.wikipedia.org/wiki/Singular_value_decomposition">Singular Value Decomposition</a> of \\(\Sigma\\), obtaining \\(USV = \Sigma\\). The matrix \\(U \in \mathbb{R}^{n\times n}\\) gives the transformation of the original \\(n\\) features into a new set of \\(n\\) features with properties (a) and (b). However, our interest is to keep only the "most significant" of the new features so we only consider the submatrix \\(U_k := U[1\dots n,1\dots k] \in \mathbb{R}^{n\times k}\\) consisting of the first \\(k\\) columns, which represent the first \\(k\\) components. This is one of the neatest linear algebra magic tricks I've seen so far.
+A few days ago I learned about <a href="http://en.wikipedia.org/wiki/Principal_component_analysis">Principal Component Analysis</a>. In "machine learning terms", it is a method that given your set of features, synthesises a new smaller set of features which (a) represent the relevant differences in your data; and (b) they are independent of each other.
+
+Very informally, this is done by first checking how the original features of your dataset \\(X \in \mathbb{R}^{m\times n}\\) depend on each other, by calculating the covariance matrix \\(\Sigma = X^T X / m\\) and then performing a <a href="http://en.wikipedia.org/wiki/Singular_value_decomposition">Singular Value Decomposition</a> of \\(\Sigma\\), obtaining \\(USV = \Sigma\\). The matrix \\(U \in \mathbb{R}^{n\times n}\\) gives the transformation of the original \\(n\\) features into a new set of \\(n\\) features with properties (a) and (b). However, our interest is to keep only the "most significant" of the new features so we only consider the submatrix \\(U_k := U[1\dots n,1\dots k] \in \mathbb{R}^{n\times k}\\) consisting of the first \\(k\\) columns, which represent the first \\(k\\) components. This is one of the neatest linear algebra magic tricks I've seen so far.
 
 In order to <em>see</em> what this process was about, I decided to check the principal components of the <a href="http://fcmod.wordpress.com/2014/11/24/neural-networks-in-python/" title="Neural networks in Python">handwritten number recognition problem</a>. Recall that in this dataset, each example is a 20x20 pixel grayscale image, encoded as a 400 item vector. Therefore, a "feature" in this dataset is the intensity of a given pixel. That is why there are 400 features, one for each pixel. Again, the code was written in Python, but this time no neural networks were needed, so I basically used <code>numpy</code> (and <code>scipy</code> for plotting).
 
@@ -64,7 +66,7 @@ In spite of being colourful and nice, this picture doesn't give me much informat
 
 After a while, I realised that this was a wrong representation of the phenomena in the background. This image has a dimension of 400x400 pixels, where the pixel \\((i,j)\\) represents the covariance of features \\(x_i\\) and \\(x_j\\). However, the key point is that each row (and column) represent a 20x20 pixel image, but they are flattened as a 400 pixel vector! Therefore, even though the covariance matrix is a 400x400 item matrix, it may be better seen as a 20x20x20x20 matrix. Thinking of it in a <a href="http://en.wikipedia.org/wiki/Currying">Curry-style</a> perspective, we can say that once you choose a pixel \\((x,y)\\) represented by the first two dimensions, the matrix gives you a 20x20 pixel image representing how that pixel \\((x,y)\\) relates to other of the 400 pixels.
 
-The following are three example choices of such pixels \\((x,y)\\): one at the top-left, one in the middle section, and one close to the borders. If you click <a href="{{ site.baseurl }}/assets/images/cv.gif" target="_blank">here</a> you can see a GIF animation (5Mb) of the covariance of most of the pixels. 
+The following are three example choices of such pixels \\((x,y)\\): one at the top-left, one in the middle section, and one close to the borders. If you click <a href="{{ site.baseurl }}/assets/images/cv.gif" target="_blank">here</a> you can see a GIF animation (5Mb) of the covariance of most of the pixels.
 
 <div class="txtaligncenter">
 <img src="{{ site.baseurl }}/assets/images/cv-examples.png" alt="cv-examples" width="400" class="aligncenter" />
