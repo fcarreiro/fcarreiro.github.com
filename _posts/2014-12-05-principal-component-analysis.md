@@ -66,10 +66,17 @@ In spite of being colourful and nice, this picture doesn't give me much informat
 
 After a while, I realised that this was a wrong representation of the phenomena in the background. This image has a dimension of 400x400 pixels, where the pixel \\((i,j)\\) represents the covariance of features \\(x_i\\) and \\(x_j\\). However, the key point is that each row (and column) represent a 20x20 pixel image, but they are flattened as a 400 pixel vector! Therefore, even though the covariance matrix is a 400x400 item matrix, it may be better seen as a 20x20x20x20 matrix. Thinking of it in a <a href="http://en.wikipedia.org/wiki/Currying">Curry-style</a> perspective, we can say that once you choose a pixel \\((x,y)\\) represented by the first two dimensions, the matrix gives you a 20x20 pixel image representing how that pixel \\((x,y)\\) relates to other of the 400 pixels.
 
-The following are three example choices of such pixels \\((x,y)\\): one at the top-left, one in the middle section, and one close to the borders. If you click <a href="{{ site.baseurl }}/assets/images/cv.gif" target="_blank">here</a> you can see a GIF animation (5Mb) of the covariance of most of the pixels.
+The following are three example choices of such pixels \\((x,y)\\): one at the top-left, one in the middle section, and one close to the borders.
 
 <div class="txtaligncenter">
 <img src="{{ site.baseurl }}/assets/images/cv-examples.png" alt="cv-examples" width="400" class="aligncenter" />
+</div>
+
+<br/>
+The following animation goes through other choices.
+
+<div class="txtaligncenter">
+<img src="{{ site.baseurl }}/assets/images/cv-optimized.gif" alt="cv-examples" width="700" class="aligncenter" />
 </div>
 
 Now things make more sense. My interpretation of this images is that the pixel on the top-left has a high positive correlation with the image being a number 3. This is because only the number 3 (or maybe a bit also number 7) are wide and tall enough to reach such a top-left location. The middle pixel is correlated with the central zone. Whenever this pixel has a high intensity, it is very likely that it will be surrounded by pixels with a similar intensity. The last picture shows that pixels very close to the borders are quite independent. Actually, if we look at the data, they are pretty much independently black!
