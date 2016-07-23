@@ -6,12 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="{{ site.author }}" />
     <meta name="description" content="{{ site.description }}">
-    <link rel="favicon" href="{{ site.baseurl }}static/img/favicon.ico">
+    <link rel="favicon" href="{{ site.url }}/static/img/favicon.ico">
 
     {% if page.title %}
       <title>{{ page.title }}</title>
     {% else %}
       <title>{{ site.title }}</title>
+    {% endif %}
+
+    <meta content="{{ site.title }}" property="og:site_name">
+    {% if page.title %}
+      <meta content="{{ page.title }}" property="og:title">
+    {% else %}
+      <meta content="{{ site.title }}" property="og:title">
+    {% endif %}
+    {% if page.title %}
+      <meta content="article" property="og:type">
+    {% else %}
+      <meta content="website" property="og:type">
+    {% endif %}
+    {% if page.description %}
+      <meta content="{{ page.description }}" property="og:description">
+    {% else %}
+      <meta content="{{ site.description }}" property="og:description">
+    {% endif %}
+    {% if page.url %}
+      <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+    {% endif %}
+    {% if page.date %}
+      <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+    {% endif %}
+    {% if page.image %}
+      <meta content="{{ site.url }}/assets/images/{{ page.image }}" property="og:image">
+    {% else %}
+      <meta content="{{ site.url }}/static/img/profile.jpg" property="og:image">
+    {% endif %}
+    {% if page.categories %}
+      {% for category in page.categories limit:1 %}
+      <meta content="{{ category }}" property="article:section">
+      {% endfor %}
+    {% endif %}
+    {% if page.tags %}
+      {% for tag in page.tags %}
+      <meta content="{{ tag }}" property="article:tag">
+      {% endfor %}
     {% endif %}
 
     <!-- Bootstrap -->
@@ -27,10 +65,10 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}static/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/static/css/main.css" />
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}static/css/monokai.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/static/css/monokai.css" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/css/lightgallery.min.css"/> -->
 
     <!-- Google Analytics -->
@@ -50,8 +88,6 @@
     <!-- Footer -->
     {% include footer.html %}
 
-    <a href="https://github.com/biomadeira/sustain"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
@@ -60,10 +96,10 @@
     integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
     crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="{{ site.baseurl }}static/js/docs.min.js"></script>
-    <script src="{{ site.baseurl }}static/js/main.js"></script>
+    <script src="{{ site.url }}/static/js/docs.min.js"></script>
+    <script src="{{ site.url }}/static/js/main.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="{{ site.baseurl }}static/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="{{ site.url }}/static/js/ie10-viewport-bug-workaround.js"></script>
 
     <!-- MathJax -->
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG" type="text/javascript"></script>

@@ -3,6 +3,8 @@ layout: post
 title: Neural networks in Python
 date: 2014-11-24 10:08:51.000000000 +01:00
 type: post
+description: "Neurolab, Octave and error functions."
+image: "numbers.png"
 published: true
 status: publish
 categories: []

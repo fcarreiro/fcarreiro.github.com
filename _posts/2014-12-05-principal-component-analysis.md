@@ -2,6 +2,8 @@
 layout: post
 title: "Principal Component Analysis: an interpretation of the covariance matrix"
 date: 2014-12-05 09:00:44.000000000 +01:00
+description: "Getting it right."
+image: "cv-optimized.gif"
 type: post
 published: true
 status: publish
