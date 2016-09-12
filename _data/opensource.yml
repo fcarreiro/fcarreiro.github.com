@@ -1,0 +1,29 @@
+- title: 'express-mysql-session'
+  url: 'https://github.com/chill117/express-mysql-session/'
+  issues: [50]
+  prs: [51]
+
+- title: 'mysql-connection-manager'
+  url: 'https://github.com/chill117/mysql-connection-manager/'
+  issues: [9, 10]
+  prs: [11]
+
+- title: 'strongloop/strong-supervisor'
+  url: 'https://github.com/strongloop/strong-supervisor/'
+  issues: [203]
+  prs: []
+
+- title: 'angular-basic-auth'
+  url: 'https://github.com/xelita/angular-basic-auth/'
+  issues: [4, 5, 6, 7]
+  prs: []
+
+- title: 'jmespath.rb'
+  url: 'https://github.com/jmespath/jmespath.rb/'
+  issues: [34]
+  prs: []
+
+- title: 'linkifyjs'
+  url: 'https://github.com/SoapBox/linkifyjs/'
+  issues: [100]
+  prs: [106]

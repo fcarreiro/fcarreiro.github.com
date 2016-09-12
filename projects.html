@@ -6,13 +6,17 @@ title: Projects
 <section id="projects">
 <div class="container">
   <h3>Projects (coming soon)</h3>
-<!--   <div class="panel panel-default">
+  <div style="text-align: left">
+    For the moment check <a href="http://www.linkedin.com/in/fcarreiro" target="_blank">LinkedIn</a>.
+  </div>
+<!--  <div class="panel panel-default">
     <div class="panel-body">
 		<h5>
 			<i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="#">Project 1</a></strong>
 			- Ei viderer tacimates pro, quem assum ea nam. Veritus omnesque eam te. Et natum mucius tamquam vel,
 			ea dolorem volumus deterruisset nec. Graeci mentitum sea an, eu prima elaboraret est.
 		</h5>
+
 		<h5>
 			<i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="#">Project 2</a></strong>
 			- An eripuit phaedrum qui, nec facer splendide ex, vel ea assum facilisi convenire.
@@ -42,8 +46,41 @@ title: Projects
 			- Essent putant indoctum sed in, reprimique persequeris neglegentur te quo. Nam rebum
 			tractatos partiendo at, debet ubique oporteat ut his.
 		</h5>
+  </div>
+  </div>-->
+
+  <h3 name="opensource" id="opensource">Open Source</h3>
+  <div class="panel panel-default">
+    <div style="text-align: left">
+      I have accounts at <a href="https://github.com/fcarreiro" target="_blank">GitHub</a>,
+      <a href="https://gitlab.com/u/fcmod" target="_blank">GitLab</a>,
+      and <a href="https://bitbucket.org/fcmod/" target="_blank">Bitbucket</a>.
+      However, most of the work I do is private, so you will not be able to see it.
+      Moreover, I don't keep merged forks in my accounts.
+      My (gentle) contributions are better accessed through the following list:
+    </div>
+    <div class="panel-body opensource">
+      {% for ositem in site.data.opensource %}
+        <h5>
+          <span class="fa fa-github"></span>&nbsp;&nbsp;
+          <a href="{{ ositem.url }}" target="_blank">{{ ositem.title }}</a>:
+          {% if ositem.issues.size > 0 %}
+            Issues
+            {% for issue in ositem.issues %}
+              <a href="{{ ositem.url }}issues/{{ issue }}" target="_blank">
+              #{{ issue }}</a>{% if forloop.last %}.{% else %}, {% endif %}
+            {% endfor %}
+          {% endif %}
+          {% if ositem.prs.size > 0 %}
+            Pull requests
+            {% for pr in ositem.prs %}
+              <a href="{{ ositem.url }}pull/{{ pr }}" target="_blank">
+              #{{ pr }}</a>{% if forloop.last %}.{% else %}, {% endif %}
+            {% endfor %}
+          {% endif %}
+        </h5>
+      {% endfor %}
     </div>
   </div>
- -->
 </div>
 </section>
