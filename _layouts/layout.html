@@ -41,6 +41,24 @@
     {% else %}
       <meta content="{{ site.url }}/static/img/profile.jpg" property="og:image">
     {% endif %}
+
+    <meta content="summary" name="twitter:card">
+    <meta content="{{ site.twitter }}" name="twitter:site">
+    <meta content="{{ site.twitter }}" name="twitter:creator">
+    {% if page.title %}
+      <meta content="{{ page.title }}" property="twitter:title">
+    {% else %}
+      <meta content="{{ site.title }}" property="twitter:title">
+    {% endif %}
+    {% if page.description %}
+      <meta content="{{ page.description }}" property="twitter:description">
+    {% else %}
+      <meta content="{{ site.description }}" property="twitter:description">
+    {% endif %}
+    {% if page.url %}
+      <meta content="{{ site.url }}{{ page.url }}" property="twitter:url">
+    {% endif %}
+
     {% if page.categories %}
       {% for category in page.categories limit:1 %}
       <meta content="{{ category }}" property="article:section">
