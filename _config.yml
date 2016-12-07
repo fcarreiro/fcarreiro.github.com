@@ -1,7 +1,7 @@
 # top level stuff you probably don't need to touch
 highlighter: rouge
 markdown: kramdown
-permalink: /:title.html
+permalink: /blog/:year/:title.html
 paginate: 5
 gems: [jekyll-paginate]
 port: 3001
