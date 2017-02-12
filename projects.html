@@ -5,9 +5,11 @@ title: Projects
 
 <section id="projects">
 <div class="container">
-  <h3>Projects (coming soon)</h3>
-  <div style="text-align: left">
-    For the moment check <a href="http://www.linkedin.com/in/fcarreiro" target="_blank">LinkedIn</a>.
+  <div class="panel panel-default">
+    <h3>Projects and Resumé</h3>
+    <div class="panel-body">
+      <h5>For the moment you can check my resumé and list of projects at <a href="https://www.toptal.com/resume/facundo-carreiro" target="_blank">Toptal</a> or <a href="http://www.linkedin.com/in/fcarreiro" target="_blank">LinkedIn</a>.</h5>
+    </div>
   </div>
 <!--  <div class="panel panel-default">
     <div class="panel-body">
@@ -49,37 +51,41 @@ title: Projects
   </div>
   </div>-->
 
-  <h3 name="opensource" id="opensource">Open Source</h3>
   <div class="panel panel-default">
-    <div style="text-align: left">
-      I have accounts at <a href="https://github.com/fcarreiro" target="_blank">GitHub</a>,
-      <a href="https://gitlab.com/u/fcmod" target="_blank">GitLab</a>,
-      and <a href="https://bitbucket.org/fcmod/" target="_blank">Bitbucket</a>.
-      However, most of the work I do is private, so you will not be able to see it.
-      Moreover, I don't keep merged forks in my accounts.
-      My (gentle) contributions are better accessed through the following list:
-    </div>
-    <div class="panel-body opensource">
-      {% for ositem in site.data.opensource %}
-        <h5>
-          <span class="fa fa-github"></span>&nbsp;&nbsp;
-          <a href="{{ ositem.url }}" target="_blank">{{ ositem.title }}</a>:
-          {% if ositem.issues.size > 0 %}
-            Issues
-            {% for issue in ositem.issues %}
-              <a href="{{ ositem.url }}issues/{{ issue }}" target="_blank">
-              #{{ issue }}</a>{% if forloop.last %}.{% else %}, {% endif %}
-            {% endfor %}
-          {% endif %}
-          {% if ositem.prs.size > 0 %}
-            Pull requests
-            {% for pr in ositem.prs %}
-              <a href="{{ ositem.url }}pull/{{ pr }}" target="_blank">
-              #{{ pr }}</a>{% if forloop.last %}.{% else %}, {% endif %}
-            {% endfor %}
-          {% endif %}
-        </h5>
-      {% endfor %}
+    <div class="panel panel-default">
+      <h3 name="opensource" id="opensource">Open Source</h3>
+      <div class="panel-body">
+        <div style="text-align: left">
+          I have accounts at <a href="https://github.com/fcarreiro" target="_blank">GitHub</a>,
+          <a href="https://gitlab.com/u/fcmod" target="_blank">GitLab</a>,
+          and <a href="https://bitbucket.org/fcmod/" target="_blank">Bitbucket</a>.
+          However, most of the work I do is private, so you will not be able to see it.
+          Moreover, I don't keep merged forks in my accounts.
+          My (gentle) contributions are better accessed through the following list:
+        </div>
+        <div class="panel-body opensource">
+          {% for ositem in site.data.opensource %}
+            <h5>
+              <span class="fa fa-github"></span>&nbsp;&nbsp;
+              <a href="{{ ositem.url }}" target="_blank">{{ ositem.title }}</a>:
+              {% if ositem.issues.size > 0 %}
+                Issues
+                {% for issue in ositem.issues %}
+                  <a href="{{ ositem.url }}issues/{{ issue }}" target="_blank">
+                  #{{ issue }}</a>{% if forloop.last %}.{% else %}, {% endif %}
+                {% endfor %}
+              {% endif %}
+              {% if ositem.prs.size > 0 %}
+                Pull requests
+                {% for pr in ositem.prs %}
+                  <a href="{{ ositem.url }}pull/{{ pr }}" target="_blank">
+                  #{{ pr }}</a>{% if forloop.last %}.{% else %}, {% endif %}
+                {% endfor %}
+              {% endif %}
+            </h5>
+          {% endfor %}
+        </div>
+      </div>
     </div>
   </div>
 </div>
