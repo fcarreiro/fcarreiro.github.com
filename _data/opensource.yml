@@ -1,3 +1,8 @@
+- title: 'sequel-pro'
+  url: 'https://github.com/sequelpro/sequelpro/'
+  issues: []
+  prs: [2776]
+
 - title: 'express-mysql-session'
   url: 'https://github.com/chill117/express-mysql-session/'
   issues: [50]
