@@ -2,33 +2,40 @@
   url: 'https://github.com/sequelpro/sequelpro/'
   issues: []
   prs: [2776]
+  language: 'Objective-C'
 
 - title: 'express-mysql-session'
   url: 'https://github.com/chill117/express-mysql-session/'
   issues: [50]
   prs: [51]
+  language: 'Javascript'
 
 - title: 'mysql-connection-manager'
   url: 'https://github.com/chill117/mysql-connection-manager/'
   issues: [9, 10]
   prs: [11]
+  language: 'Javascript'
 
 - title: 'strongloop/strong-supervisor'
   url: 'https://github.com/strongloop/strong-supervisor/'
   issues: [203]
   prs: []
+  language: 'Javascript'
 
 - title: 'angular-basic-auth'
   url: 'https://github.com/xelita/angular-basic-auth/'
   issues: [4, 5, 6, 7]
   prs: []
+  language: 'Javascript'
 
 - title: 'jmespath.rb'
   url: 'https://github.com/jmespath/jmespath.rb/'
   issues: [34]
   prs: []
+  language: 'Ruby'
 
 - title: 'linkifyjs'
   url: 'https://github.com/SoapBox/linkifyjs/'
   issues: [100]
   prs: [106]
+  language: 'Javascript'

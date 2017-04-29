@@ -24,6 +24,16 @@ body {
   color: #aaa;
 }
 
+.lang {
+  float: right;
+  color: #BBB;
+}
+
+.opensourceitem {
+  border-bottom: #DDD dotted 1px;
+  padding-bottom: 5px;
+}
+
 /* Navbar
 -------------------------------------------------- */
 
