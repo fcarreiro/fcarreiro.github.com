@@ -1,3 +1,9 @@
+- title: 'bookshelf-orm'
+  url: 'https://github.com/tgriesser/bookshelf/'
+  issues: []
+  prs: [1562, 1563]
+  language: 'Javascript'
+
 - title: 'sequel-pro'
   url: 'https://github.com/sequelpro/sequelpro/'
   issues: []
