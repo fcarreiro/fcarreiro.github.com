@@ -4,6 +4,12 @@
   prs: [1562, 1563]
   language: 'Javascript'
 
+- title: 'bookshelf-postgis'
+  url: 'https://github.com/joshswan/bookshelf-postgis'
+  issues: [1]
+  prs: [2]
+  language: 'Javascript'
+
 - title: 'sequel-pro'
   url: 'https://github.com/sequelpro/sequelpro/'
   issues: []
