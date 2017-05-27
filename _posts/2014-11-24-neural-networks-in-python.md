@@ -38,7 +38,7 @@ As I like Python, I started to look for machine learning and visualisation frame
 As a first test I wanted to create a small neural network and play with it. One of the first packages that I found was <a href="https://code.google.com/p/neurolab/">neurolab</a>. After using it a bit, I'm somewhat doubtful about its quality and flexibility, but we'll get to that later. My first task was to use the date provided in the course to train a small neural network to do multi-class classification of handwritten digits (as in the course, but this time in Python).
 
 <div class="txtaligncenter">
-<img class="wp-image-7 aligncenter" style="border:0 solid #000000;" src="{{ site.baseurl }}/assets/images/numbers.png" alt="handwritten symbols" width="400" height="400" />
+<img class="wp-image-7 aligncenter" style="border:0 solid #000000;" src="{{ site.baseurl }}assets/images/numbers.png" alt="handwritten symbols" width="400" height="400" />
 </div>
 
 The training set consists of 5000 images of 20x20 pixels tagged with a number from 1 to 10. During the course I implemented back-propagation on a 400x25x10 neural network. The training (minimisation) process is done using a function called <code>fmincg</code> which I assume implements the "<a href="http://en.wikipedia.org/wiki/Conjugate_gradient_method" target="_blank">conjugate gradient</a>" method. After 100 iteration the cost function goes from 3.0 to 0.3 and the network shows the following accuracy on the training set:

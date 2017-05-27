@@ -9,7 +9,7 @@ safe: true
 
 # edit here to achieve your personal greatness
 url: http://www.facundo.io
-# baseurl: http://www.facundo.io
+baseurl: /
 title: Facundo Carreiro
 author: Facundo Carreiro
 description: Personal blog and resume

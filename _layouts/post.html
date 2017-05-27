@@ -7,6 +7,9 @@ layout: layout
     <h3>
       <strong><a href="{{ page.url }}">{{ page.title }}</a></strong>
     </h3>
+    {% if page.description %}
+    <h4>{{ page.description }}</h4>
+    {% endif %}
   </div>
   <div class="blog-title">
     <h4>
