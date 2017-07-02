@@ -2,9 +2,16 @@
   <div class="container">
     <div class="navbar-header">
       <a class="navbar-brand" href="/"><i class="fa fa-home"></i>
-      <span class="home-text">HOME</span></a>
+      <span class="home-text">HOME</span>
+      </a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
     </div>
-    <div id="navbar">
+    <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="{{ site.baseurl }}projects.html">RESUMÉ</a></li>
         <li><a href="{{ site.baseurl }}projects.html">PROJECTS</a></li>
