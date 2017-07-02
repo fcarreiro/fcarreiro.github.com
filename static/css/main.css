@@ -203,6 +203,51 @@ body {
   margin-top: 1.3em;
 }
 
+/* Projects
+-------------------------------------------------- */
+
+.project {
+  margin-bottom: 1.5em;
+}
+
+.project .title {
+  color: #27A822;
+  font-weight: bold;
+}
+
+.project .company {
+  clear: both;
+  display: block;
+  line-height: 20px;
+  margin-bottom: 0.5em;
+}
+
+.project .dates {
+  float: right;
+  color: #8b8b8b;
+  font-size: 90%;
+}
+
+.project ul {
+  list-style: none;
+  padding-left: 1.1em;
+  margin-bottom: 0.5em;
+}
+
+.project ul li {
+  line-height: 26px;
+  color: #8b8b8b;
+  font-size: 90%;
+  list-style: disc;
+  padding-left: 0;
+}
+
+.project .tech, .project .techlist {
+  line-height: 26px;
+  color: #8b8b8b;
+  font-size: 90%;
+}
+
 /* Footer
 -------------------------------------------------- */
 
@@ -213,7 +258,7 @@ body {
 	color: #6b6b6b;
 }
 div.footer{
-  border-bottom: 5px solid #27A822;;
+  border-bottom: 5px solid #27A822;
 }
 /* Set the fixed height of the footer here */
 /*.footer {

@@ -8,48 +8,25 @@ title: Projects
   <div class="panel panel-default">
     <h3>Projects and Resumé</h3>
     <div class="panel-body">
-      <h5>For the moment you can check my resumé and list of projects at <a href="https://www.toptal.com/resume/facundo-carreiro" target="_blank">Toptal</a> or <a href="http://www.linkedin.com/in/fcarreiro" target="_blank">LinkedIn</a>.</h5>
-    </div>
-  </div>
-<!--  <div class="panel panel-default">
-    <div class="panel-body">
-		<h5>
-			<i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="#">Project 1</a></strong>
-			- Ei viderer tacimates pro, quem assum ea nam. Veritus omnesque eam te. Et natum mucius tamquam vel,
-			ea dolorem volumus deterruisset nec. Graeci mentitum sea an, eu prima elaboraret est.
-		</h5>
+    <h5>You can also check my resumé at <a href="https://www.toptal.com/resume/facundo-carreiro" target="_blank">Toptal</a> or <a href="http://www.linkedin.com/in/fcarreiro" target="_blank">LinkedIn</a>.</h5>
 
-		<h5>
-			<i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="#">Project 2</a></strong>
-			- An eripuit phaedrum qui, nec facer splendide ex, vel ea assum facilisi convenire.
-			Te his neglegentur consectetuer.
-		</h5>
-    	<h5>
-			<i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="#">Project 3</a></strong>
-			- An alii quot tantas eum, doming platonem persecuti mea et, vim perpetua cotidieque delicatissimi in.
-		</h5>
-		<h5>
-			<i class="fa fa-globe"></i>&nbsp;&nbsp;<strong><a href="#">Project 4</a></strong>
-			- Vim an case vidit sententiae, est at euismod laboramus efficiantur. Ei sit brute lorem,
-			ea eam timeam viderer aliquid, cu integre omittam moderatius quo.
-		</h5>
-		<h5>
-			<i class="fa fa-globe"></i>&nbsp;&nbsp;<strong><a href="#">Project 5</a></strong>
-			- Dicta causae meliore ex vel, in vix erant integre petentium. Vix ei nisl scripta recusabo,
-			eam doming blandit facilisis.
-		</h5>
-		<h5>
-			<i class="fa fa-cog"></i>&nbsp;&nbsp;<strong><a href="#">Project 6</a></strong>
-			- Inermis recusabo elaboraret mea et, dicat neglegentur vim te. Nec et sanctus scriptorem,
-			usu ex sapientem gubergren. Tamquam admodum ei usu.
-		</h5>
-		<h5>
-			<i class="fa fa-cog"></i>&nbsp;&nbsp;<strong><a href="#">Project 7</a></strong>
-			- Essent putant indoctum sed in, reprimique persequeris neglegentur te quo. Nam rebum
-			tractatos partiendo at, debet ubique oporteat ut his.
-		</h5>
+    {% for project in site.data.employment %}
+    <h5 class="project">
+      <!-- <i class="fa fa-cog"></i>&nbsp;&nbsp; -->
+      <span class="title">{{ project.title }}</span>
+      <span class="dates">{{ project.dates }}</span>
+      <span class="company">{{ project.company }}</span>
+      <ul>
+        {% for item in project.points %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+      <span class="tech">Technologies:</span>
+      <span class="techlist">{{ project.tech | array_to_sentence_string }}</span>
+    </h5>
+    {% endfor %}
   </div>
-  </div>-->
+</div>
 
   <div class="panel panel-default">
     <div class="panel panel-default">

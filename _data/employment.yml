@@ -1,0 +1,90 @@
+- title: 'Software Architect and Lead Node.js Developer'
+  company: 'New York Startup (contract)'
+  dates: '2017 - PRESENT'
+  points:
+    - Guided the team in writing 100+ user stories.
+    - Created the architecture and coded most of the backend.
+    - Introduced the team to Agile methodologies.
+    - Acted as interim project manager, setting up tasks and guiding the team.
+    - Created a Dockerized development environment.
+    - Interviewed 10+ developers for backend roles.
+  tech:
+    - Node.js
+    - PostgreSQL
+    - PostGIS
+    - Docker
+    - Heroku
+    - AWS
+    - Mocha
+    - Chai
+    - Braintree
+    - Redis
+
+- title: 'Software Architect and Lead Backend Developer'
+  company: 'Toury de fietsgame (contract)'
+  dates: '2017 - PRESENT'
+  points:
+    - Migrated the backend from a monolithic architecture to microservices.
+    - Reduced 40GB of DB space (80%) while preserving functionalities.
+    - Separated the backend and frontend(s) code and repositories.
+    - Created a Dockerized development environment.
+    - Refactored code to adhere to SOLID principles.
+    - Heavily modified the software development process to incorporate good practices.
+  tech:
+    - Node.js
+    - Sequelize,
+    - MariaDB
+    - Docker
+    - Heroku
+
+- title: 'Full-stack Developer'
+  company: 'Baagloo (contract)'
+  dates: '2016 - 2016'
+  points:
+    - Rewrote the Drupal back-end in modern Node.js.
+    - Took the memory footprint from 1.5GB to 100MB per process.
+    - Took the response time from 12s to 0.2s per request.
+    - Designed and implemented fraud prevention algorithms, using graph analysis algorithms.
+    - Implemented a payment processing system with PayPal.
+  tech:
+    - Node.js
+    - Python
+    - Bluebird
+    - NetworkX
+    - SQLAlchemy
+    - AngularJS
+    - Digital Ocean
+
+- title: 'Full-stack Developer'
+  company: 'Opinautos/StartMyCar (Contract)'
+  dates: '2015 - 2016'
+  points:
+    - Made performance and memory improvements as well as front-end and back-end feature implementations.
+    - Reduced 30% of cache memory usage.
+    - Created scrapers to gather automobile information.
+  tech:
+    - Node.js
+    - Express
+    - Redis
+    - MongoDB
+    - Python
+    - Heroku
+    - Git
+    - Bootstrap
+    - JavaScript
+
+- title: 'Software Developer'
+  company: 'CORE Security Technologies'
+  dates: '2006 - 2008'
+  points:
+    - Worked on the core components of the company's flagship penetration testing product.
+    - Refactored the code to be more portable across Windows and Linux.
+    - Ported the product to Windows Vista.
+    - Created a new secured update protocol and implemented it in Python.
+  tech:
+    - C++
+    - Python
+    - Boost
+    - SQL Server
+    - OpenSSL
+    - Low-level networking
