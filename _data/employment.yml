@@ -1,5 +1,6 @@
 - title: 'Software Architect and Lead Node.js Developer'
-  company: 'New York Startup (contract)'
+  company: 'New York-based Startup (contract)'
+  # link: 'http://www.askjack.com/'
   dates: '2017 - PRESENT'
   points:
     - Guided the team in writing 100+ user stories.
@@ -21,7 +22,8 @@
     - Redis
 
 - title: 'Software Architect and Lead Backend Developer'
-  company: 'Toury de fietsgame (contract)'
+  company: 'Toury de Fietsgame (contract)'
+  link: 'http://www.toury.nl'
   dates: '2017 - PRESENT'
   points:
     - Migrated the backend from a monolithic architecture to microservices.
@@ -39,6 +41,7 @@
 
 - title: 'Full-stack Developer'
   company: 'Baagloo (contract)'
+  link: 'https://www.baagloo.com/'
   dates: '2016 - 2016'
   points:
     - Rewrote the Drupal back-end in modern Node.js.
@@ -56,7 +59,8 @@
     - Digital Ocean
 
 - title: 'Full-stack Developer'
-  company: 'Opinautos/StartMyCar (Contract)'
+  company: 'Opinautos/StartMyCar (contract)'
+  link: 'https://www.startmycar.com/'
   dates: '2015 - 2016'
   points:
     - Made performance and memory improvements as well as front-end and back-end feature implementations.
@@ -75,6 +79,7 @@
 
 - title: 'Software Developer'
   company: 'CORE Security Technologies'
+  link: 'https://www.coresecurity.com/'
   dates: '2006 - 2008'
   points:
     - Worked on the core components of the company's flagship penetration testing product.

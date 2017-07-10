@@ -15,7 +15,14 @@ title: Projects
       <!-- <i class="fa fa-cog"></i>&nbsp;&nbsp; -->
       <span class="title">{{ project.title }}</span>
       <span class="dates">{{ project.dates }}</span>
-      <span class="company">{{ project.company }}</span>
+      <span class="company">
+        {{ project.company }}
+        {% if project.link %}
+        <a href="{{ project.link }}" target="_blank">
+          <i class="fa fa-external-link" style="font-size: 70%;"></i>
+        </a>
+        {% endif %}
+      </span>
       <ul>
         {% for item in project.points %}
         <li>{{ item }}</li>
