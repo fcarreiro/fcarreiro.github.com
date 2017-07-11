@@ -4,6 +4,12 @@
   prs: [1562, 1563]
   language: 'Javascript'
 
+- title: 'husky'
+  url: 'https://github.com/typicode/husky/'
+  issues: [151]
+  prs: []
+  language: 'Javascript'
+
 - title: 'bookshelf-postgis'
   url: 'https://github.com/joshswan/bookshelf-postgis'
   issues: [1]
