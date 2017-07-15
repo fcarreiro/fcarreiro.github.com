@@ -1,7 +1,15 @@
-- title: 'bookshelf-orm'
+- title: 'bookshelf'
+  addendum: 'orm'
   url: 'https://github.com/tgriesser/bookshelf/'
   issues: []
   prs: [1562, 1563]
+  language: 'Javascript'
+
+- title: 'bull'
+  addendum: 'message queue'
+  url: 'https://github.com/OptimalBits/bull/'
+  issues: [518]
+  prs: []
   language: 'Javascript'
 
 - title: 'husky'

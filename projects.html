@@ -51,7 +51,11 @@ title: Projects
           {% for ositem in site.data.opensource %}
             <h5 class="opensourceitem">
               <span class="fa fa-github"></span>&nbsp;&nbsp;
+              {% if ositem.addendum %}
+              <a href="{{ ositem.url }}" target="_blank">{{ ositem.title }}</a> ({{ ositem.addendum }}):
+              {% else %}
               <a href="{{ ositem.url }}" target="_blank">{{ ositem.title }}</a>:
+              {% endif %}
               {% if ositem.issues.size > 0 %}
                 Issues
                 {% for issue in ositem.issues %}
