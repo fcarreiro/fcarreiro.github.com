@@ -65,3 +65,9 @@
   issues: [100]
   prs: [106]
   language: 'Javascript'
+
+- title: 'packageassistant'
+  addendum: 'osx package manager'
+  url: 'https://github.com/fkistner/packageassistant/'
+  comment: 'Developed first version.'
+  language: 'Objective-C'

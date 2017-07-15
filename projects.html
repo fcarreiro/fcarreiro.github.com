@@ -70,6 +70,7 @@ title: Projects
                   #{{ pr }}</a>{% if forloop.last %}.{% else %}, {% endif %}
                 {% endfor %}
               {% endif %}
+              {{ ositem.comment }}
               {% if ositem.language %}
                 <span class="lang">{{ ositem.language }}</span>
               {% endif %}
