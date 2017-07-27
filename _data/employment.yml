@@ -1,14 +1,15 @@
-- title: 'Software Architect and Lead Node.js Developer'
+- title: 'Architect and Lead Node.js Developer'
   company: 'New York-based Startup (contract)'
   # link: 'http://www.askjack.com/'
   dates: '2017 - PRESENT'
   points:
     - Guided the team in writing 100+ user stories.
-    - Created the architecture and coded most of the backend.
+    - Created the microservices architecture and coded most of the backend.
     - Introduced the team to Agile methodologies.
     - Acted as interim project manager, setting up tasks and guiding the team.
     - Created a Dockerized development environment.
     - Interviewed 10+ developers for backend roles.
+    - Managed a team of 3 developers.
   tech:
     - Node.js
     - PostgreSQL
@@ -21,7 +22,7 @@
     - Braintree
     - Redis
 
-- title: 'Software Architect and Lead Backend Developer'
+- title: 'Architect and Lead Backend Developer'
   company: 'Toury de Fietsgame (contract)'
   link: 'http://www.toury.nl'
   dates: '2017 - PRESENT'
@@ -32,9 +33,10 @@
     - Created a Dockerized development environment.
     - Refactored code to adhere to SOLID principles.
     - Heavily modified the software development process to incorporate good practices.
+    - Improved ride segmentation and categorization accuracy.
   tech:
     - Node.js
-    - Sequelize,
+    - Sequelize
     - MariaDB
     - Docker
     - Heroku
@@ -49,6 +51,7 @@
     - Took the response time from 12s to 0.2s per request.
     - Designed and implemented fraud prevention algorithms, using graph analysis algorithms.
     - Implemented a payment processing system with PayPal.
+    - Implemented an admin panel from scratch using AngularJS and Bootstrap.
   tech:
     - Node.js
     - Python
