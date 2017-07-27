@@ -1,7 +1,7 @@
 - title: 'Architect and Lead Node.js Developer'
   company: 'New York-based Startup (contract)'
   # link: 'http://www.askjack.com/'
-  dates: '2017 - PRESENT'
+  dates: '2017 - 2017'
   points:
     - Guided the team in writing 100+ user stories.
     - Created the microservices architecture and coded most of the backend.
@@ -25,7 +25,7 @@
 - title: 'Architect and Lead Backend Developer'
   company: 'Toury de Fietsgame (contract)'
   link: 'http://www.toury.nl'
-  dates: '2017 - PRESENT'
+  dates: '2017 - 2017'
   points:
     - Migrated the backend from a monolithic architecture to microservices.
     - Reduced 40GB of DB space (80%) while preserving functionalities.

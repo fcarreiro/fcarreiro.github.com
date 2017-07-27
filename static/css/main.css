@@ -210,9 +210,13 @@ body {
   margin-bottom: 1.5em;
 }
 
+.project.closer {
+  margin-bottom: 1em;
+}
+
 .project .title {
   color: #27A822;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .project .company {
