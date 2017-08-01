@@ -62,6 +62,27 @@
     - Digital Ocean
 
 - title: 'Full-stack Developer'
+  company: 'Konekti (contract)'
+  link: 'http://www.konekti.io/'
+  dates: '2015 - 2016'
+  points:
+    - Created the first version (MVP) of the social network from scratch.
+    - Implemented features including posts, comments, likes and other reactions.
+    - Implemented various account types and profiles.
+    - Implemented messaging together with an inbox and admin panel.
+    - Deployed and maintained the product during the early demo stages.
+  tech:
+    - Ruby on Rails
+    - PostgreSQL
+    - Heroku
+    - HAML
+    - Bootstrap
+    - Devise
+    - Paperclip
+    - AWS
+    - Sendgrid
+
+- title: 'Full-stack Developer'
   company: 'Opinautos/StartMyCar (contract)'
   link: 'https://www.startmycar.com/'
   dates: '2015 - 2016'
