@@ -42,7 +42,7 @@ title: Projects
   </div>
 
   <div class="panel panel-default">
-    <h3>Employment and Projects</h3>
+    <h3>Employment</h3>
     <div class="panel-body">
       {% for project in site.data.employment %}
       <h5 class="project">
@@ -57,13 +57,17 @@ title: Projects
           </a>
           {% endif %}
         </span>
+        {% if project.points %}
         <ul>
           {% for item in project.points %}
           <li>{{ item }}</li>
           {% endfor %}
         </ul>
+        {% endif %}
+        {% if project.tech %}
         <span class="tech">Technologies:</span>
         <span class="techlist">{{ project.tech | array_to_sentence_string }}</span>
+        {% endif %}
       </h5>
       {% endfor %}
     </div>
