@@ -1,3 +1,10 @@
+- title: 'Ethminer-for-macOS'
+  addendum: 'Ethereum miner'
+  url: 'https://github.com/ArtSabintsev/Ethminer-for-macOS/'
+  issues: [16]
+  prs: []
+  language: 'C++'
+
 - title: 'bookshelf'
   addendum: 'orm'
   url: 'https://github.com/tgriesser/bookshelf/'
