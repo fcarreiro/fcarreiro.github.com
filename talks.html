@@ -1,0 +1,21 @@
+---
+layout: page
+title: "Facundo Carreiro: Talks"
+---
+
+<section id="talks">
+<div class="container">
+  <h3>Talks and Guest Lectures</h3>
+  <div class="panel panel-default">
+    <div class="panel-body papers">
+      {% for talk in site.data.talks %}
+        <h5>
+          <span class="fa fa-comment"></span>&nbsp;&nbsp;
+          {{ talk.title }}<br>
+          <span class="place">{{ talk.place }}</span>
+        </h5>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+</section>
