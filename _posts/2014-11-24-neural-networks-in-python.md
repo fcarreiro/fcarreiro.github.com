@@ -5,7 +5,7 @@ date: 2014-11-24 10:08:51.000000000 +01:00
 type: post
 description: "Neurolab, Octave and error functions."
 image: "numbers.png"
-published: true
+published: false
 status: publish
 categories: []
 tags:

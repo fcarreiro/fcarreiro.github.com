@@ -5,7 +5,7 @@ date: 2016-11-10
 type: post
 description: "Deploying a backwards-incompatible API without breaking the mobile apps."
 image: "legacy-fire.png"
-published: true
+published: false
 status: publish
 categories: []
 tags:
