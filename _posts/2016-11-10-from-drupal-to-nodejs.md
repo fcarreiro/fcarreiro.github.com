@@ -41,7 +41,7 @@ Right from the beginning we knew that the new API was going to be **backwards-in
 
 At first sight, the steps to take may seem simple: I should design the new API interface in conjunction with mobile and frontend developers. They mock the API calls and prepare the new versions. We send the new back- and front-ends to staging. We publish to production. Happiness.
 
-Not quite so... there is a small problem with the mobile applications. No matter how you send your apps to the app store, there will be a point in time when both the old and versions are being used. These two versions will expect different interfaces. And we wanted both the old and new mobile apps to work correctly at the same time. Which possible solutions come to mind?
+Not quite so... there is a small problem with mobile applications. No matter how you send your apps to the app store, there will be a point in time when both the old and new versions are being used. These two versions will expect different interfaces. And we wanted both the old and new mobile apps to work correctly at the same time. Which possible solutions come to mind?
 
 (1) **Force the user to update the mobile apps when the new version is available**: this could have worked, but in our scenario we were dealing with both Android and iOS app stores, and you cannot easily synchronize the availability of the app in both stores. This creates a problem since there wouldn't be a clear moment to migrate to the new API without losing service.
 

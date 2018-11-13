@@ -37,19 +37,19 @@ In order to <em>see</em> what this process was about, I decided to check the pri
 Following the process described above, I calculated the transformation matrix \\(U\\) and plotted the first 25 columns, resized to 20x20 pixel images. This picture shows the first 25 components.
 
 <div class="txtaligncenter">
-<img src="{{ site.baseurl }}assets/images/25components.png" alt="25components" width="400" class="aligncenter wp-image-79" />
+<img src="/assets/images/25components.png" alt="25components" width="400" class="aligncenter wp-image-79" />
 </div>
 
 This is already beautiful. Look, the first component tell us "if you want to get the most information out of your data, you better focus on the central part of the image." This is remarkable, since everything was done automagically. The next components basically say "ok, ok, if you really need more information to tear apart your examples, then you should look at these other details over here." One could ask, what is the number of components that I should consider in order to focus on enough details of my data?
 
 <div class="txtaligncenter">
-<img src="{{ site.baseurl }}assets/images/needed-components2.png" alt="needed-components2" width="500" class="aligncenter wp-image-87" />
+<img src="/assets/images/needed-components2.png" alt="needed-components2" width="500" class="aligncenter wp-image-87" />
 </div>
 
 Well, looks like with 100 components (or even less) you can capture most of the variance. This is remarkable! it means that, by focusing on the right points, you can go from a set of 400 features per example, to a set of 100 features per example, and (most likely) still get a good performance on whatever learning algorithm you want to use on this data. Let's see this reduction applied to a particular example.
 
 <div class="txtaligncenter">
-<img src="{{ site.baseurl }}assets/images/error-0.png" alt="error-0" width="500" class="aligncenter wp-image-59" />
+<img src="/assets/images/error-0.png" alt="error-0" width="500" class="aligncenter wp-image-59" />
 </div>
 
 The first image is one of the examples from the dataset. The second image is that same example filtered through the first 180 components. This means that first the 400 features (pixels) of this image were converted into new 180 features, and then "projected back" into a 20x20 image.
@@ -61,7 +61,7 @@ As you can see, the error is barely noticeable and we still get a 2x reduction o
 <strong>The covariance matrix.</strong> This method seems to work nicely, but, what is going on? I was somewhat puzzled about the covariance matrix. This \\(n\times n\\) matrix should represent, for each pair of features \\(x_i, x_j\\), how they vary together (or not). My first naive attempt to visualize it gave me the following picture.
 
 <div class="txtaligncenter">
-<img src="{{ site.baseurl }}assets/images/covariance-wrong.png" alt="covariance-wrong" width="500" class="aligncenter wp-image-54" />
+<img src="/assets/images/covariance-wrong.png" alt="covariance-wrong" width="500" class="aligncenter wp-image-54" />
 </div>
 
 In spite of being colourful and nice, this picture doesn't give me much information. What are those gaps? And why don't I see some kind of number or zone as in the principal components?
@@ -71,14 +71,14 @@ After a while, I realised that this was a wrong representation of the phenomena 
 The following are three example choices of such pixels \\((x,y)\\): one at the top-left, one in the middle section, and one close to the borders.
 
 <div class="txtaligncenter">
-<img src="{{ site.baseurl }}assets/images/cv-examples.png" alt="cv-examples" width="400" class="aligncenter" />
+<img src="/assets/images/cv-examples.png" alt="cv-examples" width="400" class="aligncenter" />
 </div>
 
 <br/>
 The following animation goes through other choices.
 
 <div class="txtaligncenter">
-<img src="{{ site.baseurl }}assets/images/cv-optimized.gif" alt="cv-examples" width="700" class="aligncenter" />
+<img src="/assets/images/cv-optimized.gif" alt="cv-examples" width="700" class="aligncenter" />
 </div>
 
 Now things make more sense. My interpretation of this images is that the pixel on the top-left has a high positive correlation with the image being a number 3. This is because only the number 3 (or maybe a bit also number 7) are wide and tall enough to reach such a top-left location. The middle pixel is correlated with the central zone. Whenever this pixel has a high intensity, it is very likely that it will be surrounded by pixels with a similar intensity. The last picture shows that pixels very close to the borders are quite independent. Actually, if we look at the data, they are pretty much independently black!
