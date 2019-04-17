@@ -8,7 +8,7 @@ port: 3001
 safe: true
 
 # edit here to achieve your personal greatness
-url: http://www.facundo.io
+url: https://www.facundo.io
 baseurl: /
 title: Facundo Carreiro
 author: Facundo Carreiro
@@ -16,7 +16,6 @@ description: Personal blog and resume
 avatar: profile.jpg
 email: contact@fa&#99;un&#37;6&#52;&#111;&#46;io
 github: fcarreiro
-twitter: ko9labs
 linkedin: fcarreiro
 # stackoverflow: username   # e.g: users/2735833/proton1h1
 #Comment out if you don't want disqus
